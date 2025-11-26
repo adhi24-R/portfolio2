@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabarmathi River Monitoring - Admin Panel</title>
+    <link rel="stylesheet" href="./admin.css".css">
+</head>
+<body>
+    <!-- Background Video -->
+    <div class="video-background">
+        <video autoplay muted loop id="bgVideo">
+            <source src="./vid/sabar2.mp4" type="video/mp4">
+            <!-- Fallback if video doesn't load -->
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Floating Particles -->
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Top Left Title -->
+    <div class="top-title">
+        <div class="title-content">
+            <div class="title-icon">🌊</div>
+            <div class="title-text">
+                <h1>Sabarmathi River Monitoring</h1>
+                <p>Admin Data Entry Panel</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Container -->
+    <div class="main-container">
+        <div class="content-wrapper">
+            <div class="form-section">
+                <div class="section-header">
+                    <h2>Water Quality Data Entry</h2>
+                    <p>Enter real-time monitoring data from river stations</p>
+                </div>
+
+                <form id="dataForm" class="form-animated">
+                    <div class="form-group">
+                        <label for="center" class="label-animated">
+                            <span class="label-icon">📍</span>
+                            Select Monitoring Center
+                        </label>
+                        <select id="center" name="center" required class="input-animated">
+                            <option value="">-- Select Center --</option>
+                            <option value="Dharoi Dam">Dharoi Dam</option>
+                            <option value="Kheralu">Kheralu</option>
+                            <option value="Gandhinagar">Gandhinagar</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Vataman">Vataman</option>
+                            <option value="Nadiad">Nadiad</option>
+                            <option value="Vautha">Vautha</option>
+                            <option value="Khambhat">Khambhat</option>
+                        </select>
+                    </div>
+
+                    <div class="parameters-grid">
+                        <div class="param-group card-animated">
+                            <label for="ph" class="label-animated">
+                                <span class="label-icon">🧪</span>
+                                pH Level
+                            </label>
+                            <input type="number" id="ph" name="ph" step="0.01" min="0" max="14" required class="input-animated">
+                            <div class="unit">Optimal: 6.5-8.5</div>
+                        </div>
+
+                        <div class="param-group card-animated">
+                            <label for="dissolvedOxygen" class="label-animated">
+                                <span class="label-icon">💧</span>
+                                Dissolved Oxygen
+                            </label>
+                            <input type="number" id="dissolvedOxygen" name="dissolvedOxygen" step="0.01" min="0" required class="input-animated">
+                            <div class="unit">mg/L (Good: >6 mg/L)</div>
+                        </div>
+
+                        <div class="param-group card-animated">
+                            <label for="turbidity" class="label-animated">
+                                <span class="label-icon">🌫️</span>
+                                Turbidity
+                            </label>
+                            <input type="number" id="turbidity" name="turbidity" step="0.01" min="0" required class="input-animated">
+                            <div class="unit">NTU (Good: <25 NTU)</div>
+                        </div>
+
+                        <div class="param-group card-animated">
+                            <label for="temperature" class="label-animated">
+                                <span class="label-icon">🌡️</span>
+                                Temperature
+                            </label>
+                            <input type="number" id="temperature" name="temperature" step="0.1" required class="input-animated">
+                            <div class="unit">°C (Optimal: 20-30°C)</div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-submit btn-animated">
+                        <span class="btn-text">Submit Data to Dashboard</span>
+                        <span class="btn-icon">📊</span>
+                    </button>
+                </form>
+
+                <div id="statusMessage" class="status-message"></div>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="recent-entries">
+                    <h3 class="section-title">
+                        <span class="title-icon">📋</span>
+                        Recent Entries
+                    </h3>
+                    <div id="recentEntries" class="entries-container"></div>
+                </div>
+
+                <div class="stats-footer">
+                    <div class="stat-item">
+                        <div class="stat-number" id="totalEntries">0</div>
+                        <div class="stat-label">Total Entries</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="todayEntries">0</div>
+                        <div class="stat-label">Today</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="activeStations">8</div>
+                        <div class="stat-label">Active Stations</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./admin.js"></script>
+</body>
+</html>

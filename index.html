@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Story of Adithyan Robert</title>
+    <link rel="stylesheet" href="adhi.css">
+   
+</head>
+<body>
+
+     <div id="storybook" class="hidden">
+
+        <!-- Mobile Menu Toggle Button (The "Hamburger") -->
+        <button id="menu-toggle" class="hidden">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+
+        
+        <aside id="table-of-contents">
+            <button id="menu-close" class="hidden">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            
+            <div class="toc-content-wrapper">
+                <h2 class="toc-title">Table of Contents</h2>
+                <nav>
+                    <ul>
+                        <!-- JS uses .toc-link and data-chapter -->
+                        <li><a href="" class="toc-link active-link" data-chapter="chapter-1">Chapter 1: The Coder</a></li>
+                        <li><a href="" class="toc-link" data-chapter="chapter-3">Chapter 2: The Engineer</a></li>
+                        <li><a href="" class="toc-link" data-chapter="chapter-4">Chapter 3: The Artist</a></li>
+                        <li><a href="" class="toc-link" data-chapter="chapter-5">Chapter 4: The Writer</a></li>
+                        <li><a href="" class="toc-link" data-chapter="chapter-6">Epilogue: Connect</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="social-links-wrapper">
+                    <p>Find me online:</p>
+                    <div class="social-links">
+                        <a href="https://github.com/adhi24-R" title="GitHub">
+                            <svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/adithyan-r-1bb9352b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" title="LinkedIn">
+                            <svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/adhixx._.24?utm_source=qr" title="Instagram">
+                            <svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="M17.34,5.46h0a1.2,1.2,0,1,0,1.2,1.2A1.2,1.2,0,0,0,17.34,5.46Zm4.6,2.42a7.59,7.59,0,0,0-.46-2.43,4.94,4.94,0,0,0-1.16-1.77,4.7,4.7,0,0,0-1.77-1.15,7.3,7.3,0,0,0-2.43-.47C15.06,2,14.72,2,12,2s-3.06,0-4.12.06a7.3,7.3,0,0,0-2.43.47A4.78,4.78,0,0,0,3.68,3.68,4.7,4.7,0,0,0,2.53,5.45a7.3,7.3,0,0,0-.47,2.43C2,8.94,2,9.28,2,12s0,3.06.06,4.12a7.3,7.3,0,0,0,.47,2.43,4.7,4.7,0,0,0,1.15,1.77,4.78,4.78,0,0,0,1.77,1.15,7.3,7.3,0,0,0,2.43.47C8.94,22,9.28,22,12,22s3.06,0,4.12-.06a7.3,7.3,0,0,0,2.43-.47,4.7,4.7,0,0,0,1.77-1.15,4.85,4.85,0,0,0,1.16-1.77,7.59,7.59,0,0,0,.46-2.43c0-1.06.06-1.4.06-4.12S22,8.94,21.94,7.88ZM20.14,16a5.61,5.61,0,0,1-.34,1.86,3.06,3.06,0,0,1-.75,1.15,3.19,3.19,0,0,1-1.15.75,5.61,5.61,0,0,1-1.86.34c-1,.05-1.37.06-4,.06s-3,0-4-.06A5.73,5.73,0,0,1,6.1,19.8,3.27,3.27,0,0,1,5,19.05a3,3,0,0,1-.74-1.15A5.54,5.54,0,0,1,3.86,16c0-1-.06-1.37-.06-4s0-3,.06-4A5.54,5.54,0,0,1,4.21,6.1,3,3,0,0,1,5,5,3.14,3.14,0,0,1,6.1,4.2,5.73,5.73,0,0,1,8,3.86c1,0,1.37-.06,4-.06s3,0,4,.06a5.61,5.61,0,0,1,1.86.34A3.06,3.06,0,0,1,19.05,5,3.06,3.06,0,0,1,19.8,6.1,5.61,5.61,0,0,1,20.14,8c.05,1,.06,1.37.06,4S20.19,15,20.14,16ZM12,6.87A5.13,5.13,0,1,0,17.14,12,5.12,5.12,0,0,0,12,6.87Zm0,8.46A3.33,3.33,0,1,1,15.33,12,3.33,3.33,0,0,1,12,15.33Z"/></svg>
+                        </a>
+                       
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main id="chapters">
+
+            <!-- === Chapter 1: The Coder (Full Stack & AI) === -->
+            <section class="chapter active" id="chapter-1">
+                <h1 class="chapter-h1">Chapter 1: The Coder</h1>
+                <p class="chapter-subtitle">Full Stack Developer & AI Enthusiast</p>
+
+                <div class="chapter-grid-3">
+                    <div class="photo-wrapper">
+                        <img 
+                            src="./admin/adhi.jpg" 
+                            alt="Adithyan.R" 
+                            class="profile-photo"
+                            
+                        >
+                    </div>
+                    
+                    <div class="info-wrapper">
+                        <h3 class="chapter-h3">Core </h3>
+                        <p class="chapter-p">
+Frontend and Backend Developer skilled in building responsive user interfaces and developing secure, efficient server-side logic. Experienced in creating smooth end-to-end web applications by combining modern frontend technologies with robust backend systems and database management.                        </p>
+                        
+                        <a 
+                            href="[YOUR_RESUME_LINK.pdf]" 
+                            download="YourName_Resume.pdf"
+                            class="resume-button"
+                        >
+                            Download Resume
+                        </a>
+                        
+                        <div class="tech-stack-wrapper">
+                            <h3 class="chapter-h3">Tech Stack</h3>
+                            <div class="tech-stack-grid">
+                                <span class="tech-stack-item">Python</span>
+                                <span class="tech-stack-item">JavaScript</span>
+                                <span class="tech-stack-item">React</span>
+                                <span class="tech-stack-item">Node.js</span>
+                                <span class="tech-stack-item">JAVA</span>
+                                <span class="tech-stack-item">DELUGE</span>
+                                <span class="tech-stack-item">GEN AI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="ai-exploration">
+                    <h3 class="chapter-h3">AI Exploration</h3>
+                    <p class="chapter-p">
+AI Enthusiast passionate about building intelligent applications, exploring machine learning models, and integrating AI-driven features into real-world projects.                    </p>
+                </div>
+            </section>
+
+            
+
+            <!-- === Chapter 2: The Engineer (Projects) === -->
+            <section class="chapter" id="chapter-3">
+                <h1 class="chapter-h1">Chapter 2: The Engineer</h1>
+                <p class="chapter-subtitle">Building, Breaking, and Rebuilding Better</p>
+
+                <h3 class="chapter-h3">Featured Projects</h3>
+                <div class="project-list">
+                    <!-- Project 1 -->
+                    <div class="project-item">
+                        <h4>sabarmathi river monitering</h4>
+                        <p>The Sabarmati River Monitoring Web App tracks real-time water quality from 8 centers using parameters like pH, temperature, turbidity, and more, with analytics and report generation. It also includes an SOS alert button and a JAMS chatbot for quick assistance and safety notifications.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/adhi24-R/sabarmathi_river_monitering">View Source on GitHub &rarr;</a>
+                            <a href="https://mainsarmathi.netlify.app/">View Live Demo &rarr;</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="project-item">
+                        <h4>Admin panel sabarmathi</h4>
+                        <p>The Admin Panel allows the administrator to update river monitoring details, sensor values, and alerts, which are stored securely in JSON Bin. These updated values automatically reflect on the main dashboard in real time.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/adhi24-R/sabarmathi-_adminpanel">View Source &rarr;</a>
+                            <a href="https://adminsabarmathi.netlify.app/">View Demo &rarr;</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="project-item">
+                        <h4>Flow -Task management</h4>
+                        <p>An AI-powered art generator. I fine-tuned a Stable Diffusion model on a custom dataset of [Your Art Style] and built a simple Flask API and React frontend to interact with it.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/adhi24-R/Taskmanagement">View Source on GitHub &rarr;</a>
+                            <a href="https://adhi24-r.github.io/Taskmanagement/">View Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+           
+            </section>
+
+            <!-- === Chapter 3: The Artist (Gallery) === -->
+            <section class="chapter" id="chapter-4">
+                <h1 class="chapter-h1">Chapter 3: The Artist</h1>
+                <p class="chapter-subtitle">From my sketchbook to the screen.</p>
+
+                <p class="artist-intro">
+                    When I'm not coding, I'm often drawing. It's a way to slow down, observe, and connect with the world differently. Here are a few pieces from my collection.
+                </p>
+
+                <div class="sketch-grid">
+                    <!-- Sketch 1 -->
+                    <div class="sketch-item">
+                        <img src="./admin/art1.png" alt="[Your Art Title 1]" style="width: 100%; height: auto; border-top-left-radius: 0.5rem; border-top-right-radius: 0.5rem;"> 
+                        <div class="sketch-placeholder">
+                            
+                        </div>
+                        <p>Actor Dhanush</p>
+                    </div>
+                    
+                    <!-- Sketch 2 -->
+                    <div class="sketch-item">
+                        <div class="sketch-placeholder">
+                                                    <img src="./admin/art2.png" alt="[Your Art Title 1]" style="width: 100%; height: auto; border-top-left-radius: 0.5rem; border-top-right-radius: 0.5rem;"> 
+
+                        </div>
+                        <p>Yami from Black clover anime</p>
+                    </div>
+
+                    <!-- Sketch 3 -->
+                    <div class="sketch-item">
+                        <div class="sketch-placeholder">
+                                                    <img src="./admin/art3.png" alt="[Your Art Title 1]" style="width: 100%; height: auto; border-top-left-radius: 0.5rem; border-top-right-radius: 0.5rem;"> 
+
+                        </div>
+                        <p>Akaza[hakuji] x Koyuki</p>
+                    </div>
+
+                    <!-- Sketch 4 -->
+                    <div class="sketch-item">
+                        <div class="sketch-placeholder">
+                                                  <img src="./admin/art4.png" alt="[Your Art Title 1]" style="width: 100%; height: auto; border-top-left-radius: 0.5rem; border-top-right-radius: 0.5rem;"> 
+
+                        </div>
+                        <p>Actress Sai pallavi</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- === Chapter 4: The Writer (Stories) === -->
+            <section class="chapter" id="chapter-5">
+                <h1 class="chapter-h1">Chapter 4: The Writer</h1>
+                <p class="chapter-subtitle">Words are worlds.</p>
+
+                <div class="story-wrapper">
+                    <h2>When Roses Bleed</h2>
+                    <h1>CHapter 1-Petals After Dusk</h1>
+                    <p class="story-content">
+The school was quiet after clubs ended. The sky was dark purple, and the lanterns from the festival still moved in the wind. Haruto walked to the old cherry tree. He saw Yuna standing there, calm and alone, like she always was.
+“You came,” Yuna said.
+“You asked,” Haruto replied.
+They walked through the hallway together. It smelled like chalk and rain. Yuna touched the trophy case glass and looked at the fingerprints instead of the medals. Haruto said everyone wanted to win. Yuna said some people just wanted to stop losing. Her words were gentle but heavy.
+They reached the door to the rooftop. It was supposed to be locked, but the frame was weak. Yuna pushed the side of the door, and it opened with a soft sound. They stepped outside. The wind was cool. The city lights looked like a low sky in the distance. From up there, the school felt peaceful.
+“I used to be scared of heights,” Yuna said. “Now I’m used to looking down.”
+“Don’t,” Haruto said.
+“Not tonight,” she promised.
+They stood close but didn’t touch. Haruto took out a small notebook with a single line of a poem. Yuna asked if she could read it. He said it wasn’t ready. She took a folded note from her blazer and placed it in his hand.
+“Don’t read it yet,” she said. “It’s a warning.”
+They walked along the edge of the roof and talked. Haruto told her his mother kept cracked teacups and called them survivors. Yuna said her father spoke softly outside and loudly at home. He asked her favorite season. She said early spring, when the petals fall right after they bloom. “Some things are beautiful because they don’t stay,” she said.
+“That sounds like giving up,” he answered.
+“It sounds honest,” she said.
+“Stay late tomorrow,” Haruto told her. “I’ll bring the poem.”
+“Tomorrow,” she said, but her smile looked weak.
+Suddenly, they heard footsteps in the stairwell. The handle rattled. An older man’s voice called, “Who’s up there? The rooftop is off-limits.” Yuna didn’t look at the door. She looked toward a dark corner where a security camera used to be. Only the base was still there—the camera was gone.
+“Who knows you come up here?” Haruto asked.
+“No one,” Yuna said too quickly. Then, softer: “Only the ones who need to.”
+The footsteps went away. The roof became quiet again.
+“See?” Haruto said. “There’s still tomorrow.”
+“You make things feel simple,” Yuna said.
+“Sometimes they are.”
+“Not for me,” she whispered.
+She placed both hands on the railing. Haruto reached out, close to her but not touching.
+“Yuna,” he said.
+“Haruto,” she replied. It sounded like goodbye.
+                    </p>
+                    <p class="story-content">
+The wind grew stronger. A door slammed somewhere below. Yuna’s fingers tightened on the railing. She looked toward the dark corner again, then back at him. Her eyes were shiny, like she was holding back tears.
+“If I leave,” she said, “promise you’ll keep something of me.”
+“Don’t talk like that.”
+“Promise.”
+“I promise.”
+For a moment, it was calm, like the night was holding its breath. Then everything happened too fast. Yuna moved forward in a way that didn’t look like a simple slip. Haruto grabbed for her. His fingers touched her sleeve—then there was only air. The sound of her fall felt like the sky tearing open.
+He didn’t remember if he screamed. He only felt the cold railing under his hands. He looked down. The lanterns in the courtyard shook in the wind. A still shape lay near the cherry tree where they first met.
+By morning, the school said it was suicide. Teachers spoke softly. Students cried online. Yellow tape blocked the rooftop. Fresh scratches marked the railing. Haruto said the expected words so people would leave him alone. When he got home, he remembered the note in his pocket.
+He opened it carefully. Yuna’s handwriting was neat and clear.
+If anything happens to me, it wasn’t an accident. Don’t trust the ones who arrive first.
+Haruto sat down. He thought about the missing camera. He remembered the voice at the door. He remembered how Yuna said “tomorrow” like it was already broken.
+He slid the note under his unfinished poem. The poem now had a purpose. So did he.
+It wasn’t a fall. Someone pushed her.
+                    </p>
+                </div>
+            </section>
+
+            <!-- === Chapter 6: Epilogue (Contact) === -->
+            <section class="chapter" id="chapter-6">
+                <h1 class="chapter-h1">Epilogue: Connect</h1>
+                <p class="chapter-subtitle">Let's write the next chapter together.</p>
+
+                <div class="contact-form-wrapper">
+                    <p>
+                        Whether you're interested in my work, want to collaborate on a project, or just want to chat about AI, art, or good stories, I'd love to hear from you.
+                    </p>
+                    <form
+  action="https://formspree.io/f/xdkvqpan"
+  method="POST"
+>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        <div class="form-group-last">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-input" required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="submit-button">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="adhi.js"></script>
+</body>
+</html>
